@@ -18,6 +18,14 @@ class AuthenticatedSessionController extends Controller
     /**
      * Display the login view.
      */
+    public function urlError()
+    {
+        return view('auth.url-error');
+    }
+
+    /**
+     * Display the login view.
+     */
     public function create(Request $request, $userId)
     {
         $users = User::all();
