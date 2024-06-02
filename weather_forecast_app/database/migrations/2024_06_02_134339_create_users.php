@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('id')->unsigned(); // PK
-            $table->string('user_id', 255)->collation('utf8mb4_unicode_ci')->unique(); // UK
-            $table->integer('prefecture', false, true)->length(20)->nullable();
-            $table->integer('city', false, true)->length(20)->nullable();
-            $table->string('name', 255)->collation('utf8mb4_unicode_ci')->nullable();
+            $table->string('user_id', 255)->unique(); // UK
+            $table->integer('prefecture')->length(20)->nullable();
+            $table->integer('city')->length(20)->nullable();
+            $table->string('name', 255)->nullable();
             $table->timestamps(0);
         });
     }
