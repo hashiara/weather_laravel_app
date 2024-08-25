@@ -1,0 +1,49 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+header {
+    height: 65px;
+}
+
+.header-logo {
+    height: 70%;
+    align-items: center;
+}
+
+.header-logo img {
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.hamburger-content {
+    border-top: 2px rgb(60, 60, 60) solid;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.hamburger {
+    padding: 20px 0;
+}
+
+.hamburger a {
+    text-decoration: none;
+    color: #343a40;
+}
+
+#video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container {
+    margin: 30px auto 0;
+}
